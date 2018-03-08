@@ -47,7 +47,7 @@
             </div>
 
             <div class="column">
-                <img width="400px" height="500px" src="img/character-art/viper.png" alt="*Depiction of viper wearing his costume in a defensive pose."><br><br>
+                <img width="400px" height="500px" src="src/assets/viper.png" alt="Depiction of viper wearing his costume in a defensive pose."><br><br>
                 <article class="message is-primary">
                     <div class="message-header">
                         Viper Costume

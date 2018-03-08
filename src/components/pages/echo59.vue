@@ -86,12 +86,9 @@
 
 <script>
 
-    import Icon from 'vue-awesome/components/Icon'
-
     export default {
 
         components: {
-          Icon,
         },
 
         data () {

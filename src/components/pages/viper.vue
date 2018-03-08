@@ -1,6 +1,6 @@
 <template>
     <div id="viper" class="content">
-        hello?
+
     </div>
 </template>
 

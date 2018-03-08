@@ -108,6 +108,10 @@
         padding: 0;
     }
 
+    li {
+      margin-top: 0px;
+    }
+
     .select{
         width: 100%;
     }

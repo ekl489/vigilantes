@@ -44,6 +44,17 @@ export default {
         return {
 
           /*
+            Page Properties:
+            - id
+            - title
+            - group
+            - author
+            - content
+            - icon
+            - has_own_component
+            - LinkDisplayStyle
+            - LinkPage
+
             LinkDisplayStyle
             Hidden: 0
             SearchBarOnly: 1
@@ -53,7 +64,7 @@ export default {
 
             pages: [
                 {
-                    identifier: 'Home',
+                    id: 'Home',
                     title: 'Home',
                     group: 'General',
                     author: '',
@@ -64,7 +75,7 @@ export default {
                 }, // Home
 
                 {
-                    identifier: 'Podcasts',
+                    id: 'Podcasts',
                     title: 'Podcasts',
                     group: 'General',
                     author: '',
@@ -75,18 +86,18 @@ export default {
                 }, // Podcasts
 
                 {
-                    identifier: 'Quiz',
+                    id: 'Quiz',
                     title: 'Quiz',
                     group: 'General',
                     author: '',
                     content: '',
                     icon: 'question',
                     has_own_component: true,
-                    LinkDisplayStyle: 3
+                    LinkDisplayStyle: 0,
                 }, // Quiz
 
                 {
-                    identifier: 'TheTeam',
+                    id: 'TheTeam',
                     title: 'The Team',
                     group: 'General',
                     author: '',
@@ -97,7 +108,7 @@ export default {
                 }, // The Team
 
                 {
-                    identifier: 'DiscoverMore',
+                    id: 'DiscoverMore',
                     title: 'Discover More',
                     group: 'General',
                     author: '',
@@ -108,7 +119,7 @@ export default {
                 }, // Discover More
 
                 {
-                    identifier: 'UpdateLog',
+                    id: 'UpdateLog',
                     title: 'Update Log',
                     group: 'General',
                     author: '',
@@ -120,7 +131,7 @@ export default {
 
 
                 {
-                    identifier: 'WorldHistory',
+                    id: 'WorldHistory',
                     title: 'World History',
                     group: 'Vigilantes',
                     author: '',
@@ -131,7 +142,7 @@ export default {
                 }, // World History
 
                 {
-                    identifier: 'Territory',
+                    id: 'Territory',
                     title: 'Territory',
                     group: 'Vigilantes',
                     author: '',
@@ -142,7 +153,7 @@ export default {
                 }, // Territory
 
                 {
-                    identifier: 'SubUniverses',
+                    id: 'SubUniverses',
                     title: 'Sub-Universes',
                     group: 'Vigilantes',
                     author: '',
@@ -152,97 +163,94 @@ export default {
                     LinkDisplayStyle: 3,
                     pages: [
                         {
-                            identifier: 'Viper', title: 'Viper', author: '', content: '',
-                            icon: 'users', has_own_component: true, primary_page: true, LinkDisplayStyle: 2,
+                            id: 'Viper', title: 'Viper', author: '', content: '', hasTabs: true,
+                            icon: 'users', has_own_component: true, LinkPage: 'ViperViper', LinkDisplayStyle: 2,
                             pages: [
                                 {
-                                    identifier: 'ViperViper', title: 'Viper', author: '', content: '',
-                                    icon: 'user', has_own_component: true, primary_page: false, LinkDisplayStyle: 2,
+                                    id: 'ViperViper', title: 'Viper', author: '', content: '',
+                                    icon: 'user', has_own_component: true, LinkDisplayStyle: 1,
                                 },
 
                                 {
-                                    identifier: 'Tongyi', title: 'Tongyi', author: '', content: '',
-                                    icon: 'user', has_own_component: true, primary_page: false, LinkDisplayStyle: 2,
+                                    id: 'Tongyi', title: 'Tongyi', author: '', content: '',
+                                    icon: 'user', has_own_component: true, LinkDisplayStyle: 1,
                                 },
 
                                 {
-                                    identifier: 'JonathanPan', title: 'Three Eyed Warrior', author: '', content: '',
-                                    icon: 'user', has_own_component: true, primary_page: false, LinkDisplayStyle: 2,
+                                    id: 'JonathanPan', title: 'Three Eyed Warrior', author: '', content: '',
+                                    icon: 'user', has_own_component: true, LinkDisplayStyle: 1,
                                 },
 
                                 {
-                                    identifier: 'Longying', title: 'Longying', author: '', content: '',
-                                    icon: 'user', has_own_component: true, primary_page: false, LinkDisplayStyle: 2,
+                                    id: 'Longying', title: 'Longying', author: '', content: '',
+                                    icon: 'user', has_own_component: true, LinkDisplayStyle: 1,
                                 },
 
                                 {
-                                    identifier: 'MajorPatton', title: 'Major Patton', author: '', content: '',
-                                    icon: 'user', has_own_component: true, primary_page: false, LinkDisplayStyle: 2,
+                                    id: 'MajorPatton', title: 'Major Patton', author: '', content: '',
+                                    icon: 'user', has_own_component: true, LinkDisplayStyle: 1,
                                 },
                             ]
                         },
 
                         {
-                            identifier: 'SilverSpectre', title: 'Silver Spectre', author: '', content: '',
-                            icon: 'users', has_own_component: true, primary_page: true, LinkDisplayStyle: 2,
+                            id: 'SilverSpectre', title: 'Silver Spectre', author: '', content: '',
+                            icon: 'users', has_own_component: true, LinkDisplayStyle: 2,
                         },
 
                         {
-                            identifier: 'Echo59', title: 'Echo59', author: '', content: '',
-                            icon: 'users', has_own_component: true, primary_page: true, LinkDisplayStyle: 2,
+                            id: 'Echo59', title: 'Echo59', author: '', content: '',
+                            icon: 'users', has_own_component: true, LinkDisplayStyle: 2,
                         },
 
                         {
-                            identifier: 'BurningHand', title: 'BurningHand', author: '', content: '',
-                            icon: 'users', has_own_component: true, primary_page: true, LinkDisplayStyle: 2,
+                            id: 'BurningHand', title: 'BurningHand', author: '', content: '',
+                            icon: 'users', has_own_component: true, LinkDisplayStyle: 2,
                         },
 
                         {
-                            identifier: 'JackKitchin', title: 'Jack Kitchin', author: '', content: '',
-                            icon: 'users', has_own_component: true, primary_page: true, LinkDisplayStyle: 2,
+                            id: 'JackKitchin', title: 'Jack Kitchin', author: '', content: '',
+                            icon: 'users', has_own_component: true, LinkDisplayStyle: 2,
                         },
 
                         {
-                            identifier: 'Hannah', title: 'Hannah', author: '', content: '',
-                            icon: 'users', has_own_component: true, primary_page: true, LinkDisplayStyle: 2,
+                            id: 'Hannah', title: 'Hannah', author: '', content: '',
+                            icon: 'users', has_own_component: true, LinkDisplayStyle: 2,
                         },
                     ]
                 }, // Sub Universes
 
                 {
-                    identifier: 'Timeline',
+                    id: 'Timeline',
                     title: 'Timeline',
                     group: 'Vigilantes',
                     author: '',
                     content: '',
                     icon: 'clock-o',
                     has_own_component: true,
-                    primary_page: true,
                     LinkDisplayStyle: 3,
                 }, // Timeline
 
                 {
-                    identifier: 'Storylines',
+                    id: 'Storylines',
                     title: 'Storylines',
                     group: 'Vigilantes',
                     author: '',
                     content: '',
                     icon: 'book',
                     has_own_component: true,
-                    primary_page: true,
-                    LinkDisplayStyle: 3,
+                    LinkDisplayStyle: 0,
                 }, // Storylines
 
                 {
-                    identifier: 'Gallery',
+                    id: 'Gallery',
                     title: 'Gallery',
                     group: 'General',
                     author: '',
                     content: '',
                     icon: 'picture-o',
                     has_own_component: true,
-                    primary_page: false,
-                    LinkDisplayStyle: 1,
+                    LinkDisplayStyle: 0,
                 }, // Gallery
 
             ],
